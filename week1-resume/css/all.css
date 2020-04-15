@@ -1,0 +1,348 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom reset */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-family: 'Andale Mono', 'Roboto Mono', monospace;
+  font-size: 80px;
+  line-height: 90px;
+  margin-top: 48px;
+  padding-bottom: 23px;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 47px;
+}
+
+h2 {
+  font-family: 'PingFangTC', 'Noto Sans TC', sans-serif;
+  font-weight: 500;
+  line-height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 7px;
+  margin-bottom: 16px;
+}
+
+.ch {
+  font-size: 32px;
+  margin-right: 16px;
+}
+
+.en {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 32px;
+  color: #A00404;
+  padding-top: 3px;
+}
+
+h3 {
+  font-family: 'PingFangTC', 'Noto Sans TC', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 8px;
+}
+
+p {
+  font-family: 'PingFangTC', 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+li {
+  font-family: 'PingFangTC', 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.profile {
+  margin-bottom: 72px;
+}
+
+.profile p {
+  padding-left: 48px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.profile p:last-child {
+  margin-bottom: 0;
+}
+
+.profile .first-p {
+  position: relative;
+}
+
+.profile .first-p::before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  background-color: #96A9C4;
+  border-radius: 50%;
+  left: 18px;
+  top: 10px;
+}
+
+.education {
+  margin-bottom: 72px;
+}
+
+.education li {
+  position: relative;
+  padding-left: 48px;
+  line-height: 33px;
+  margin-bottom: 32px;
+}
+
+.education li::before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  background-color: #96A9C4;
+  border-radius: 50%;
+  left: 18px;
+  top: 9px;
+}
+
+.education li::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  background-color: #96A9C4;
+  left: 25px;
+  top: -49px;
+  bottom: 19px;
+}
+
+.education .last-edu::after {
+  display: none;
+}
+
+.skills {
+  position: relative;
+  color: #ffffff;
+  margin-bottom: 72px;
+}
+
+.skills .container {
+  background-color: #415165;
+  padding-top: 24px;
+  padding-right: 102px;
+  padding-bottom: 57px;
+  padding-left: 102px;
+}
+
+.skills h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 39px;
+}
+
+.skills h2 .en {
+  color: #ffffff;
+}
+
+.skills ul {
+  width: 216px;
+  white-space: nowrap;
+  padding-left: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  border-left: 1px solid #ffffff;
+}
+
+.skills li {
+  margin-bottom: 16px;
+}
+
+.skills li:last-child {
+  margin-bottom: 0;
+}
+
+.skills::after {
+  content: '';
+  background-color: #96A9C4;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 67px;
+  bottom: 67px;
+  z-index: -1;
+}
+
+.work {
+  margin-bottom: 67px;
+}
+
+.work h2 {
+  margin-bottom: 21px;
+}
+
+.work img {
+  margin-bottom: 8px;
+}
+
+.work .hexImg {
+  height: 67px;
+}
+
+.work p {
+  width: 642px;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 0;
+  margin-bottom: 36px;
+}
+
+.work ul {
+  border-left: 1px solid #96A9C4;
+}
+
+.work li {
+  padding-left: 24px;
+  margin-bottom: 32px;
+}
+
+.work li:last-child {
+  margin-bottom: 0;
+}
+
+.contact {
+  color: #ffffff;
+  background-color: #415165;
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+.contact h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 32px;
+}
+
+.contact h2 .en {
+  color: #ffffff;
+}
+
+.contact ul {
+  text-align: center;
+}
+
+.contact li {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.contact a {
+  line-height: 33px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.contact .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .social li {
+  margin-bottom: 0;
+}
+
+.contact .social a {
+  display: block;
+  line-height: 1;
+}
+
+.contact .social img {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+/*# sourceMappingURL=all.css.map */
