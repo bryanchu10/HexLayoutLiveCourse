@@ -1,0 +1,180 @@
+@import "reset";
+@import "variable";
+@import "mixin";
+
+.imgFrame{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1224px;
+  margin: 0 auto;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(../img/banner.png) center center no-repeat;
+  color: $colorLight;
+  margin-bottom: 64px;
+  text-align: left;
+
+  h1{
+    font-size: 80px;
+    line-height: 94px;
+    font-weight: 900;
+    margin-bottom: 32px;
+  
+    span{
+      font-size: 24px;
+      line-height: 42px;
+      font-weight: 700;
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  p{
+    margin-bottom: 64px;
+  }
+  
+  ul{
+    display: flex;
+  }
+
+  li{
+    margin: 0 8px;
+  }
+
+  a{
+    display: block;
+  }
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+
+  h2{
+    margin-bottom: 40px;
+  }
+
+  img{
+    max-width: 384px;
+    margin-bottom: 24px;
+  }
+
+  p{
+    margin-bottom: 4px;
+  }
+
+  .edu{
+    line-height: 36px;
+  }
+  
+  ul{
+    &::before{
+      content: '';
+      display: block; // 預設是 inline-block
+      width: 384px;
+      border-top: 1px solid $colorDark;
+      margin: 28px auto 34px;
+    }
+  }
+  
+  li{
+    margin-bottom: 32px;
+    padding-left: 24px;
+    span{
+      position: relative;
+      &::before{
+        @include dot;
+        width: 22px;
+        height: 22px;
+        left: -38px;
+        top: 4px;
+      }
+    }
+  }
+}
+
+.brand{
+  color: $colorLight;
+  background-color: $colorDark;
+  padding-top: 56px;
+  padding-bottom: 160px;
+
+  h2{
+    margin-bottom: 12px;
+  }
+
+  h3{
+    margin-bottom: 32px;
+    font-weight: 500;
+  }
+  
+  p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    margin-bottom: 48px;
+  }
+
+  img{
+    &:first-child{
+      max-width: 792px;
+      margin-bottom: 40px;
+    }
+    max-width: 588px;
+  }
+}
+
+.sideProject{
+  background: url(../img/bg.png) center bottom no-repeat;
+  padding-top: 64px;
+  padding-bottom: 104px;
+
+  h2{
+    margin-bottom: 24px;
+  }
+  p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    margin-bottom: 48px;
+  }
+
+  li{
+    color: $colorLight;
+    max-width: 384px;
+    margin-bottom: 8px;
+    &:nth-child(4),
+    &:nth-child(5){
+      max-width: 588px;
+    }
+  }
+
+  img{
+    margin-bottom: 16px;
+    width: 100%;
+  }
+}
+
+.contact{
+  color: $colorLight;
+  background: $colorDark;
+  padding-top: 64px;
+  padding-bottom: 80px;
+
+  h2{
+    margin-bottom: 16px;
+  }
+
+  li{
+    font-weight: 500;
+  }
+}

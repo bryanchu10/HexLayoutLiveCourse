@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom reset */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'PingFangTC', 'Noto Sans TC',sans-serif;
+  text-align: center;
+}
+
+body, h3, ul, li, p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+img {
+  display: block;
+}
+
+.imgFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 1224px;
+  margin: 0 auto;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: url(../img/banner.png) center center no-repeat;
+  color: #ffffff;
+  margin-bottom: 64px;
+  text-align: left;
+}
+
+.banner h1 {
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.banner h1 span {
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 700;
+  top: 0;
+  left: 0;
+}
+
+.banner p {
+  margin-bottom: 64px;
+}
+
+.banner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner li {
+  margin: 0 8px;
+}
+
+.banner a {
+  display: block;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.about h2 {
+  margin-bottom: 40px;
+}
+
+.about img {
+  max-width: 384px;
+  margin-bottom: 24px;
+}
+
+.about p {
+  margin-bottom: 4px;
+}
+
+.about .edu {
+  line-height: 36px;
+}
+
+.about ul::before {
+  content: '';
+  display: block;
+  width: 384px;
+  border-top: 1px solid #000000;
+  margin: 28px auto 34px;
+}
+
+.about li {
+  margin-bottom: 32px;
+  padding-left: 24px;
+}
+
+.about li span {
+  position: relative;
+}
+
+.about li span::before {
+  position: absolute;
+  content: '';
+  background-color: #891818;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  left: -38px;
+  top: 4px;
+}
+
+.brand {
+  color: #ffffff;
+  background-color: #000000;
+  padding-top: 56px;
+  padding-bottom: 160px;
+}
+
+.brand h2 {
+  margin-bottom: 12px;
+}
+
+.brand h3 {
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.brand p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 42px;
+  margin-bottom: 48px;
+}
+
+.brand img {
+  max-width: 588px;
+}
+
+.brand img:first-child {
+  max-width: 792px;
+  margin-bottom: 40px;
+}
+
+.sideProject {
+  background: url(../img/bg.png) center bottom no-repeat;
+  padding-top: 64px;
+  padding-bottom: 104px;
+}
+
+.sideProject h2 {
+  margin-bottom: 24px;
+}
+
+.sideProject p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 42px;
+  margin-bottom: 48px;
+}
+
+.sideProject li {
+  color: #ffffff;
+  max-width: 384px;
+  margin-bottom: 8px;
+}
+
+.sideProject li:nth-child(4), .sideProject li:nth-child(5) {
+  max-width: 588px;
+}
+
+.sideProject img {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.contact {
+  color: #ffffff;
+  background: #000000;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.contact h2 {
+  margin-bottom: 16px;
+}
+
+.contact li {
+  font-weight: 500;
+}
+/*# sourceMappingURL=all.css.map */

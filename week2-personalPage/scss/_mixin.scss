@@ -1,0 +1,6 @@
+@mixin dot{
+  position: absolute;
+  content:'';
+  background-color: $colorSecond;
+  border-radius: 50%;
+}
