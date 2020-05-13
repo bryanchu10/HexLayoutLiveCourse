@@ -1,0 +1,21 @@
+@for $i from -$order-num through $order-num {
+  .od#{$i} {
+    order: $i;
+  }
+}
+
+@include pad {
+  @for $i from -$order-num through $order-num {
+    .od#{$i}--pad {
+      order: $i;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from -$order-num through $order-num {
+    .od#{$i}--mobile {
+      order: $i;
+    }
+  }
+}

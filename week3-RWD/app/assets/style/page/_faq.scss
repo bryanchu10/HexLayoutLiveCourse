@@ -1,0 +1,94 @@
+// banner
+
+.faq__banner {
+  background: url(../img/72.png) center center no-repeat;
+  background-size: cover;
+
+  @include pad {
+    background: url(../img/72--pad.png) center center no-repeat;
+    background-size: cover;
+  }
+
+  @include mobile {
+    background: url(../img/72--mobile.png) center center no-repeat;
+    background-size: cover;
+  }
+
+  &__text {
+    padding-top: 208px;
+
+    @include pad {
+      padding-top: 232px;
+    }
+
+    @include mobile {
+      padding-top: 101px;
+    }
+  }
+
+  h2 {
+    color: $dark;
+    font-weight: 500;
+  }
+
+  img {
+    @include mobile {
+      height: 24px;
+      background-color: $light;
+      border-radius: 50%;
+    }
+  }
+}
+
+// qalist
+
+.qalist {
+  padding-bottom: 156px;
+
+  @include pad {
+    padding-bottom: 104px;
+  }
+
+  @include mobile {
+    padding-bottom:
+    3.5rem;
+  }
+
+  h2 {
+    color: $dark;
+  }
+
+  &__item {
+    border: 1px solid #000000;
+
+    &__header {
+      border-bottom: 1px solid #000000;
+    }
+
+    &__body {
+      background-color: $gray-lighter;
+
+      p {
+        @include pad {
+          font-size: 0.875rem;
+        }
+      }
+    }
+
+    &:not(.active) {
+      border-bottom: none;
+
+      .up{
+        display: none;
+      }
+    }
+
+    &.active .down {
+      display: none;
+    }
+  }
+
+  .bdt-n{
+    border-top: none;
+  }
+}

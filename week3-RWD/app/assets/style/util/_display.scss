@@ -1,0 +1,15 @@
+.d-f { display: flex; }
+.d-b { display: block; }
+.d-n { display: none; }
+
+@include pad {
+  .d-f--pad { display: flex; }
+  .d-b--pad { display: block; }
+  .d-n--pad { display: none; }
+}
+
+@include mobile {
+  .d-f--mobile { display: flex; }
+  .d-b--mobile { display: block; }
+  .d-n--mobile { display: none; }
+}

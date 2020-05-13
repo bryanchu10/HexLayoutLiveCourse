@@ -1,0 +1,31 @@
+.icon {
+  height: 1rem;
+  width: 1rem;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.icon--diamond {
+  background-image: url(../img/icon-diamond.svg);
+}
+.icon--sun {
+  background-image: url(../img/icon-sun.svg);
+}
+.icon--lightening {
+  background-image: url(../img/icon-lightening.svg);
+}
+
+@include mobile {
+  .icon--light--mobile{
+    &.icon--diamond {
+      background-image: url(../img/icon-diamond--light.svg);
+    }
+    &.icon--sun {
+      background-image: url(../img/icon-sun--light.svg);
+    }
+    &.icon--lightening {
+      background-image: url(../img/icon-lightening--light.svg);
+    } 
+  }
+}

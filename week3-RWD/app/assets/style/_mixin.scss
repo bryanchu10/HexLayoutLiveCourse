@@ -1,0 +1,11 @@
+@mixin pad {
+  @media (max-width: $break-point-pad){
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $break-point-mobile) {
+    @content;
+  }
+}

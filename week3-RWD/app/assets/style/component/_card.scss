@@ -1,0 +1,30 @@
+.card {
+  &__img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 16rem;
+  }
+  &__body {
+    text-align: left;
+    padding: 1rem;
+    border: 1px solid $gray-light;
+    background: $light;
+
+    h3 {
+      font-size: 1rem;
+      line-height: 1.25;
+      color: $dark;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .time {
+      color: $gray;
+      line-height: 1.25;
+    }
+  }
+}

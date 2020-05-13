@@ -1,0 +1,62 @@
+.navbar {
+  background: $color-primary;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+
+  @include mobile {
+    position: relative;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .ham-menu-trigger {
+    position: absolute;
+    padding: 0.625rem 0;
+    left: 1rem;
+  }
+
+  .ham-menu {
+    color: $light;
+
+    @include mobile {
+      position: absolute;
+      top: 100%;
+      left: -100%;
+      background: $color-primary;
+      border: 1px solid $light;
+      transition: left 0.5s ease;
+    }
+
+    &.show {
+      left: 0;
+    }
+
+    li {
+      @include mobile {
+        border-bottom: 1px solid $light;
+      }
+    }
+
+    a {
+      color: $light;
+      padding: 7px 0 5px;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease;
+
+      &:hover,
+      &.active {
+        border-bottom: 2px solid $light;
+        @include mobile {
+          border-bottom: none;
+          color: $color-primary;
+          background-color: $light;
+        }
+      }
+
+      @include mobile {
+        padding: 15px 0;
+        border-bottom: none;
+      }
+    }
+  }
+}

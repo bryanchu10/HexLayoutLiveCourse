@@ -1,0 +1,15 @@
+.ta-l { text-align: left; }
+.ta-c { text-align: center; }
+.ta-r { text-align: right; }
+
+@include pad {
+  .ta-l--pad { text-align: left; }
+  .ta-c--pad { text-align: center; }
+  .ta-r--pad { text-align: right; }
+}
+
+@include mobile {
+  .ta-l--mobile { text-align: left; }
+  .ta-c--mobile { text-align: center; }
+  .ta-r--mobile { text-align: right; }
+}

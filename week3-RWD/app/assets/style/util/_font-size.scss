@@ -1,0 +1,21 @@
+@for $i from 1 through $font-num {
+  .fz#{$i} {
+    font-size: (0.25rem * $i);
+  }
+}
+
+@include pad {
+  @for $i from 1 through $font-num {
+    .fz#{$i}--pad {
+      font-size: (0.25rem * $i);
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 1 through $font-num {
+    .fz#{$i}--mobile {
+      font-size: (0.25rem * $i);
+    }
+  }
+}

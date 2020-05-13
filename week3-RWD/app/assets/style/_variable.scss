@@ -1,0 +1,38 @@
+/* break-point */
+$break-point-pad: 1024px;
+$break-point-mobile: 767px;
+
+/* grid */
+$container-max-width: 1224px;
+$container-max-width-pad: 696px;
+$container-max-width-mobile: 372px;
+
+$gutter-width: 24px;
+$gutter-width-pad: $gutter-width;
+$gutter-width-mobile: 20px;
+
+$grid-num: 12;
+$grid-num-pad: 8;
+$grid-num-mobile: 4;
+
+/* color */
+$color-bg: #FBF2F2;
+$color-primary: #AA0601;
+$color-info: #650300;
+
+$gray-lighter: #F2F2F2;
+$gray-light: #DEE2E6;
+$gray: #707070;
+$gray-dark: #212529;
+
+$light: #ffffff;
+$dark: #000000;
+
+/* space */
+$space-num: 24;
+
+/* order */
+$order-num: 3;
+
+/* font */
+$font-num: 18;
