@@ -58,7 +58,6 @@ table {
 }
 
 a {
-  pointer-events: auto;
   text-decoration: none;
 }
 
@@ -343,6 +342,7 @@ li {
 .contact .social a {
   display: block;
   line-height: 1;
+  pointer-events: auto;
 }
 
 .contact .social img {

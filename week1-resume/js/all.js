@@ -3,4 +3,5 @@ AOS.init({
   initClassName: false,
   animatedClassName: 'animate__animated',
   offset: 0,
+  once: true,
 });
