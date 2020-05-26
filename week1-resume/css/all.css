@@ -54,12 +54,28 @@ table {
 
 /* custom reset */
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  pointer-events: auto;
+  text-decoration: none;
 }
 
 img {
   display: block;
+}
+
+span {
+  display: inline-block;
+}
+
+[data-aos] {
+  visibility: hidden;
+}
+
+[data-aos].animate__animated {
+  visibility: visible;
 }
 
 h1 {
@@ -76,12 +92,8 @@ h2 {
   font-family: 'PingFangTC', 'Noto Sans TC', sans-serif;
   font-weight: 500;
   line-height: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-bottom: 1px solid #000000;
   padding-bottom: 7px;
   margin-bottom: 16px;
@@ -213,9 +225,7 @@ li {
 }
 
 .skills h2 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border-bottom: 1px solid #ffffff;
   margin-bottom: 39px;
 }
@@ -294,12 +304,11 @@ li {
   background-color: #415165;
   padding-top: 24px;
   padding-bottom: 48px;
+  overflow: hidden;
 }
 
 .contact h2 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border-bottom: 1px solid #ffffff;
   margin-bottom: 32px;
 }
@@ -319,17 +328,12 @@ li {
 
 .contact a {
   line-height: 33px;
-  text-decoration: none;
   color: #ffffff;
 }
 
 .contact .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .contact .social li {

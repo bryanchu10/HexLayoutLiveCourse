@@ -52,6 +52,23 @@ table {
 	box-sizing: border-box;
 }
 
+a{
+	pointer-events: auto;
+	text-decoration: none;
+}
+
 img{
   display: block;
+}
+
+span{
+	display: inline-block;
+}
+
+[data-aos] {
+	visibility: hidden;
+}
+
+[data-aos].animate__animated {
+	visibility: visible;
 }

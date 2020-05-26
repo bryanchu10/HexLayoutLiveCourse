@@ -161,6 +161,7 @@
   background-color: $primaryColor;
   padding-top: 24px;
   padding-bottom: 48px;
+  overflow: hidden;
 
   h2{
     justify-content: center;
@@ -183,7 +184,6 @@
 
   a{
     line-height: 33px;
-    text-decoration: none;
     color: $bgColor;
   }
 
