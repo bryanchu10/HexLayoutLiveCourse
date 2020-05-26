@@ -328,6 +328,7 @@ li {
 .contact a {
   line-height: 33px;
   color: #ffffff;
+  pointer-events: auto;
 }
 
 .contact .social {
@@ -342,7 +343,6 @@ li {
 .contact .social a {
   display: block;
   line-height: 1;
-  pointer-events: auto;
 }
 
 .contact .social img {

@@ -185,6 +185,7 @@
   a{
     line-height: 33px;
     color: $bgColor;
+    pointer-events: auto;
   }
 
   .social{
@@ -198,7 +199,6 @@
     a{
       display: block;
       line-height: 1;
-      pointer-events: auto;
     }
 
     img{
