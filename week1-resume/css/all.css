@@ -327,8 +327,8 @@ li {
 
 .contact a {
   line-height: 33px;
-  color: #ffffff;
   pointer-events: auto;
+  color: #ffffff;
 }
 
 .contact .social {
